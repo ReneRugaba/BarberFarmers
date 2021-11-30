@@ -1,0 +1,67 @@
+@import "./../abstracts/mixins";
+@import "./../abstracts/variables";
+
+
+.price {
+    @include displayFlexCollumn;
+
+    h1,a{
+        margin: auto;
+        padding-top: 2.5%;
+    }
+
+    h1{
+    text-shadow: $textShadow;
+    font-family: fontFamilly;
+    color: $fontsColor;
+    }
+    
+    ul{
+        margin-bottom: 3%;
+    }
+
+    a{
+        color: $fontsColor;
+    }
+
+    li{
+        @include diplayFlexRow;
+        justify-content: space-between;
+        padding-top: 10%;
+        padding-bottom: 3%;
+        list-style: none;
+        border-bottom: 1px dashed $fontsColor;
+    }
+
+    .puce_list{
+        @include widthAndHeigth(30px,30px);
+        padding-right: 3%;
+    }
+
+    h1, p {
+        color: $fontsColor;
+        text-align: center;
+    }
+
+    .divider{
+        margin-left: 10%;
+        font-weight: bold;
+        color: $fontsColor;
+    }
+}
+
+@media #{$responsive480}{
+    @include priceListdisign(48px,1rem,5vh,15vh);
+}
+
+@media #{$responsive481}{
+    @include priceListdisign(5em,1.4rem,10vh,30vh);
+}
+
+@media #{$responsive769}{
+    @include priceListdisign(6em,1.4rem,20vh,30vh);
+}
+
+@media #{$responsive1280}{
+    @include priceListdisign(6em,1.4rem,20vh,30vh);
+}

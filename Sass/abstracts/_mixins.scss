@@ -18,3 +18,28 @@
 @mixin borderRadius($radius) {
     border-radius: $radius;
 }
+
+@mixin displayFlexCollumn(){
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin diplayFlexRow(){
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin priceListdisign($fontH1,$fontZiseP,$padding,$width) {
+    .prices h1 {
+        font-size: $fontH1;
+    }
+    .prices p {
+        font-size: $fontZiseP;
+    }
+    .price{ /*          Price paragraph             */
+        padding-left: $padding;
+    }
+    .caption {
+        width: $width;
+    }
+}
