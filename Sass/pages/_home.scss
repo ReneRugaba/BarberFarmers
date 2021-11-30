@@ -1,0 +1,66 @@
+@import "./../abstracts/mixins";
+@import "./../abstracts/variables";
+
+.aboutUs{ /*    Main container      */
+    display: flex;
+    flex-direction: column;
+}
+
+.banner img{
+    width: 100%;
+    border-bottom: $border;
+}
+
+.aboutUs p {
+    @include fontManipulation(2vw);
+    @include widthAndHeigth(60%,45%);
+    @include borderRadius(1rem);
+    margin: auto;
+    padding: 3%;
+    background-color: $textBackGroungColor;
+    border: $border;
+    margin-bottom: 15%;
+}
+
+.aboutUs h1 {
+    font-size: 6em;
+    text-shadow: $textShadow;
+    font-family: $fontFamilly;
+}
+
+.aboutUs h1, p {
+    color: #fefee2;
+    text-align: center;
+}
+
+.goldenWord { /*    Golden word in h1 Header    */
+    color: $fontsColor;
+}
+
+.logoHead{
+    @include widthAndHeigth(20%,auto)
+}
+
+@media #{$responsive480}{
+    .aboutUs p {
+        @include fontManipulation(5vw);
+        @include widthAndHeigth(90%,90%);
+    }
+    @include responsivehomeH1(2em)
+}
+
+@media #{$responsive481}{
+    .aboutUs p {
+        @include fontManipulation(5vw);
+        @include widthAndHeigth(90%,90%);
+    }
+    @include responsivehomeH1(2em)
+}
+
+@media #{$responsive769}{
+    .aboutUs p {
+        @include fontManipulation(5vw);
+        @include widthAndHeigth(90%,90%);
+    }
+    @include responsivehomeH1(2em)
+}

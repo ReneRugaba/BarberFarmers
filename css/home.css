@@ -1,73 +1,108 @@
-
-                    /* Top zone */
-.banner img{
-    width: 100%;
-    border-bottom: solid 4px #D4AF37;
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
-                    /*  Text zone   */
-
-.aboutUs{ /*    Main container      */
-    display: flex;
-    flex-direction: column;
+html {
+  width: 100%;
+  font-family: "NTR", sans-serif;
 }
 
-.aboutUs h1, p {
-    color: #fefee2;
-    text-align: center;
+main {
+  max-width: 100%;
+  background-image: url("../img/wooden-background.jpg");
+  background-attachment: fixed;
 }
+
+body {
+  background-image: url("../img/wooden-background.jpg");
+  background-attachment: fixed;
+}
+
+.aboutUs {
+  /*    Main container      */
+  display: flex;
+  flex-direction: column;
+}
+
+.banner img {
+  width: 100%;
+  border-bottom: solid 4px #D4AF37;
+}
+
 .aboutUs p {
-    width: 60%;
-    font-size: 2rem;
-    text-align: justify;
-    overflow: scroll;
-    height: 600px;
-    margin: auto;
-    padding: 3%;
-    background-color: rgba(184, 115, 51, 0.77) ;
-    border: 4px solid #D4AF37;
-    border-radius: 1rem;
-    overflow-wrap: break-word;
-    text-align: start;
-    margin-bottom: 15%;
+  font-size: 2vw;
+  text-align: center;
+  text-align: justify;
+  width: 60%;
+  height: 45%;
+  border-radius: 1rem;
+  margin: auto;
+  padding: 3%;
+  background-color: rgba(184, 115, 51, 0.77);
+  border: solid 4px #D4AF37;
+  margin-bottom: 15%;
 }
 
 .aboutUs h1 {
-    font-size: 6em;
-    text-shadow: black 1.5px 1.5px 1.5px;
-    font-family: "Rye";
-}
-.goldenWord { /*    Golden word in h1 Header    */
-    color: #D4AF37;
+  font-size: 6em;
+  text-shadow: black 1.5px 1.5px 1.5px;
+  font-family: "Rye";
 }
 
-@media screen and (max-width: 480px){
-        .aboutUs h1 {
-            font-size: 2em;
-        }
-    
+.aboutUs h1, p {
+  color: #fefee2;
+  text-align: center;
 }
 
-@media screen and (max-width: 481px){
-    .aboutUs h1 {
-        font-size: 3em;
-    }
+.goldenWord {
+  /*    Golden word in h1 Header    */
+  color: #D4AF37;
 }
 
-
-@media screen and (max-width: 769px){
-    .aboutUs h1 {
-        font-size: 4em;
-    }
+.logoHead {
+  width: 20%;
+  height: auto;
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (max-width: 480px) {
+  .aboutUs p {
+    font-size: 5vw;
+    text-align: center;
+    text-align: justify;
+    width: 90%;
+    height: 90%;
+  }
 
-    .aboutUs h1 {
-        font-size: 8em;
-    }
+  .aboutUs h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 481px) {
+  .aboutUs p {
+    font-size: 5vw;
+    text-align: center;
+    text-align: justify;
+    width: 90%;
+    height: 90%;
+  }
+
+  .aboutUs h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 769px) {
+  .aboutUs p {
+    font-size: 5vw;
+    text-align: center;
+    text-align: justify;
+    width: 90%;
+    height: 90%;
+  }
+
+  .aboutUs h1 {
+    font-size: 2em;
+  }
 }
 
-
-
-
+/*# sourceMappingURL=home.css.map */

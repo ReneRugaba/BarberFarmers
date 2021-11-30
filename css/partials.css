@@ -19,7 +19,8 @@ header {
 }
 .header_1 .Logo{
    color: #ffd700;
-    max-width: 15vw;
+    width: 5vw;
+    margin-top: 1rem;
 }
 .header_1 ul {
     max-width: 80%;

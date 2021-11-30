@@ -1,0 +1,20 @@
+@mixin responsivehomeH1($mesure) {
+    .aboutUs h1 {
+        font-size: $mesure;
+    } 
+}
+
+@mixin fontManipulation($size,$align:center,$format:justify) {
+    font-size: $size;
+    text-align: $align;
+    text-align: $format;
+}
+
+@mixin widthAndHeigth($width,$height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin borderRadius($radius) {
+    border-radius: $radius;
+}
